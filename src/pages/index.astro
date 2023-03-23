@@ -11,6 +11,7 @@ import Content from '~/components/widgets/Content.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
+import Stats3 from '~/components/widgets/Stats3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const meta = {
@@ -24,22 +25,20 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
+    callToAction={{ text: 'Engagez-moi', href: 'mailto:elerouzes@gmail.com', icon: 'tabler:download' }}
+    callToAction2={{ text: 'En savoir plus', href: '#features' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden lg:inline">create your website <br class="2xl:hidden"/> with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS
+      Edouard Le Rouzes <span class="hidden lg:inline"> <br class="2xl:hidden"/> </span>
+      <span class="text-accent dark:text-white highlight"> </span> 
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0 +
-        Tailwind CSS.</span
+        <span class="font-semibold">Edouard est</span></span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
-      Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Prêt à relever de nouveaux défis</span> passionné par la création et la mise en œuvre de campagnes de marketing réussies. Compétent en communication et en collaboration, avec une capacité éprouvée à atteindre ou dépasser les objectifs. 
     </Fragment>
   </Hero>
 
@@ -50,143 +49,79 @@ const meta = {
   <!-- Features Widget *************** -->
 
   <Features
-    highlight="Features"
-    title="What you get with AstroWind"
-    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    highlight="Compétences"
+    title="Ce que je maitrise"
+    subtitle="La connaissance n'a aucune valeur à moins que vous ne la mettiez en pratique."
     items={[
       [
         {
-          title: 'Astro + Tailwind CSS Integration',
+          title: 'La suite office',
           description:
-            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-          icon: 'tabler:brand-tailwind',
+            'Une grande connaissance de la suite office ainsi que de ses outils (Excel, Words, Planner, Etc.) ',
+          icon: 'tabler:files',
         },
         {
-          title: 'Ready-to-use Components',
+          title: 'Design & Montage Vidéo',
           description:
-            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-          icon: 'tabler:components',
+            'Une maitrise confortable de Adobe photoshop et Final Cut Pro X, une connaissance grandissante de Blender',
+          icon: 'tabler:video',
         },
         {
-          title: 'Best Practices',
+          title: 'Codages',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+            'Présentement en développement de mes compétences de codages HTML, CSS, Javascript',
           icon: 'tabler:list-check',
         },
       ],
       [
         {
-          title: 'Excellent Page Speed',
+          title: 'Google Ads & Meta',
           description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+            'Ayant déjà oeuvré avec les outils de Google, je suis en mesure de mettre sur place des campagnes de marketing digitales',
           icon: 'tabler:rocket',
         },
         {
           title: 'Search Engine Optimization (SEO)',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+            'Des compétences grandissantes en SEO grace à mes cours sur le codage de sites internet',
           icon: 'tabler:arrows-right-left',
         },
         {
-          title: 'Open to new ideas and contributions',
+          title: 'Gestion de projets',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+            "Possédant un excellent sens de l'organisation, je suis en mesure de travailler sur beaucoups de projets en même temps.",
           icon: 'tabler:bulb',
         },
       ],
     ]}
   />
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    highlight="Inside template"
-    title="And what's inside? ..."
-    items={[
-      {
-        title: 'Per ei quaeque sensibus',
-        description:
-          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-        description:
-          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-        description:
-          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
-      },
-    ]}
-    image={{
-      src: import('~/assets/images/caos.jpg'),
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-      Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
-      tacimates.
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-    ]}
-    image={{
-      src: import('~/assets/images/vintage.jpg'),
-      alt: 'Vintage Image',
-    }}
-  />
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Mon parcours scholaire"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: "DEP: <span class='font-medium'>en lancement d'entreprise</span>",
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
+          "Né d’un désire d’aider mes parents à lancer leur compagnie, j’ai complété un DEP en parallèle de mon secondaire afin d’avoir les connaissances requises pour démarrer une entreprise au Québec.",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: 'DEC: <span class="font-medium">en entrepreneuriat</em>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+          "Attiré par le monde des affaires, j’ai souhaité parfaire mes connaissances en réalisant une technique en entrepreneuriat au Collège Champlain à Saint-Lambert, Qc. <div style='font-style: italic; font-size: smaller; font-weight: 300;'><em>Cours pertinents: Notions de gestion, Finances pour la prise de décision, Analyse de données commerciales, Recherche et renseignement, Psychologie du consommateur. Les bases des ressources humaines</em></div>",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'BAC : <span class="font-medium">en administration des affaires (avec Majeure en Marketing)</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+          "Une fois mon DEC complété, je me suis fait offrir une bourse d’excellence par une université située en Australie, ayant un désir constant de découvrir de nouvelles choses, je me suis lancé dans cette aventure. <div style='font-style: italic; font-size: smaller; font-weight: 300;'>Cours pertinents: Administration des affaires, Gestions des ressources humaines, Finances, Marketing, Comportements du consommateur, Ventes et négociations, Gestion internationale des ressources humaines </div>",
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: 'Marché du travail !',
         icon: 'tabler:check',
       },
     ]}
@@ -196,85 +131,214 @@ const meta = {
     }}
   />
 
+  
+  <Content
+  highlight="APRÈS LES ÉTUDES"
+  title="Expériences Professionnelles"
+
+  items={[
+      {
+        title: 'Gestion',
+        description:
+          "- Gestion complète de plus de 20 syndicats de copropriétés (pour un total de plus de 700 portes) et gestion complémentaire du département des opérations, regroupant plus de 65 syndicats (pour un total de plus de 1715 portes)",
+      },
+      {
+        title: 'Préparation des budgets',
+        description:
+          "- Préparations et exécution des budgets ainsi que des travaux pour les syndicats sous ma supervision",
+      },
+      {
+        title: 'Autres',
+        description:
+          "- Présider les conseils d’administration et assemblées générales pour chaque syndicat sous ma supervision <div style='font-style: italic; font-size: smaller; font-weight: 300;'>- Mise en place de systèmes et stratégies afin d’améliorer l’efficacité générale de la compagnie</div><div style='font-style: italic; font-size: smaller; font-weight: 300;'>- Évaluer et fournir une aide complémentaire au département marketing afin d'accroître la notoriété de l'entreprise</div>",
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/caos.jpg'),
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Gestionnaire immobilier</h3>
+      Gestion Laucandrique, Brossard <div>2022-2023</div>
+    </Fragment>
+  </Content>
+
+  <Stats
+  items={[
+    { name: 'Portes', value: '717' },
+    { name: 'Syndicats', value: '22' },
+    { name: 'Pieds Carrés', value: '10.3K' },
+    { name: 'Users', value: '48.4K' },
+  ]}
+/>
+
+  <Content
+  isReversed
+  isAfterContent
+  items={[
+      {
+        title: 'Gestion générale',
+        description:
+          "- Gérer et superviser une équipe de 25 employés (Recrutement, formation, évaluation de performance et administration)",
+      },
+      {
+        title: 'Planification & Optimisations',
+        description:
+          "- Planifications et implémentation de nouveaux produits <div style='font-size: smaller font-weight: 500;'>- Optimisation des tâches et création d'objectifs concrets ayant pour but d'améliorer l'expérience client ainsi que d'uniformiser la qualité du service des agents</div>",
+      },
+      {
+        title: 'Tâches connexes',
+        description:
+          "- Prendre en charge les situations plus épineuses et à risque de devenir une plainte au Conseil de la Radiodiffusion et des Télécommunications (CRTC) <div style='font-size: smaller font-weight: 500;'>- Analyse des performances de ventes et mise en place de solutions afin d'atteindre les objectifs de l'entreprise</div>",
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/caos.jpg'),
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Gestionnaire adjoint</h3>
+      Ebox, Longueuil <div>2018-2022</div>
+    </Fragment>
+  </Content>
+
+  <Stats3
+  items={[
+    { name: 'Employés', value: '25' },
+    { name: "Centre d'appels", value: '2' },
+    { name: 'Clients', value: '~15K' },
+  ]}
+/>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'Service client',
+        description:
+          "- Répondre de manière professionnelle et rapide aux demandes et questionnements des adhérents concernant leurs contrats d’assurance collective et apporter des solutions cohérentes grâce à une écoute active <div>- Prendre en charge les demandes des ressources humaines de nos clients afin d’apporter les modifications nécessaires aux contrats de leurs employés </div>",
+      },
+      {
+        title: 'Personne ressource',
+        description:
+        "- Agir à titre de personne-ressource et apporter le support nécessaire auprès des autres secteurs afin de faire en sorte que les objectifs en matière de niveau de service soient constamment atteints ou dépassés",
+      },
+      {
+        title: 'Résolution de problèmes',
+        description:
+          "- Prendre en charge et résoudre les situations plus compliquées ainsi qu’effectuer les suivis nécessaires jusqu’à la résolution complète du problème Participer à la préparation de dossiers litigieux pouvant faire l’objet d’une action légale.",
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/caos.jpg'),
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Agent de soutiens aux assurances collectives</h3>
+      SSQ Assurance, Longueuil <div> 2020-2022</div>
+    </Fragment>
+  </Content>
+
+  <Content
+  isReversed
+  isAfterContent
+  items={[
+      {
+        title: 'Budgets',
+        description:
+          "Suivi du budget et ajustement des dépenses quotidiennes",
+      },
+      {
+        title: 'Collecte et visualisation de données',
+        description:
+          "Collecter et analyser les données à l’aide de Google analytics et des données des plateformes de publicités afin de créer des rapports complets et pouvoir en faire la présentation visuelle aux autres départements",
+      },
+      {
+        title: 'Budgets',
+        description:
+          "Suivi du budget et ajustement des dépenses quotidiennes",
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/caos.jpg'),
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Coordinateur Marketing Digitale. (Stage)</h3>
+      Havas <div>2019</div>
+    </Fragment>
+  </Content>
+
+
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    highlight="Components"
+    title="Mes Certifications"
+    subtitle="En apprentissage constant, de manière autodidacte"
+    highlight="Connaissances"
     items={[
       {
-        title: 'Headers',
+        title: 'Google Project Management: Professional Certificate',
         description:
-          'In general, Headers contain information that makes it easier for visitors to interact with the website.',
+          'Modules pertinents: Planification de projets, Débutez un projet, Exécution de projets, Gestion de projets Agile <div style="font-style: italic; font-weight: bold;" >Google Courses - Coursera</div>',
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
+        title: 'HTML, CSS, and Javascript for Web Developers',
         description:
-          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
+          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.<div style="font-style: italic; font-weight: bold;" >Johns Hopkins University</div>',
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
+        title: 'Certification sur la suite microsoft office',
         description:
-          'Display your product in action and how the Features actually create a solution for your target customer.',
+          'Display your product in action and how the Features actually create a solution for your target customer.<div style="font-style: italic; font-weight: bold;" >Champlain College</div>',
         icon: 'flat-color-icons:todo-list',
       },
       {
-        title: 'Content',
+        title: 'Certification de base sur les réseaux sociaux',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. <div style="font-style: italic; font-weight: bold;" >Hubspot</div>',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Certification sur la plateforme Google Analytics',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. <div style="font-style: italic; font-weight: bold;" >Google</div>',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
+        title: 'Certification Google Ads (Search)',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<div style="font-style: italic; font-weight: bold;" >Google</div>',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
+        title: 'Certification Google Ads (Display)',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<div style="font-style: italic; font-weight: bold;" >Google</div>',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
+        title: 'Certification Google Ads (Measurement)',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<div style="font-style: italic; font-weight: bold;" >Google</div>',
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
+        title: 'Certifications Hubspot sur le marketing',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<div style="font-style: italic; font-weight: bold;" >Hubspot</div>',
         icon: 'icon-park:page-template',
       },
     ]}
   />
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <LatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-			Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-			Astro is a very interesting technology. Thanks.
-		`}
-    postIds={[
-      'get-started-website-with-astro-tailwind-css.md',
-      'how-to-customize-astrowind-to-your-brand.md',
-      'useful-resources-to-create-websites.md',
-      'astrowind-template-in-depth.md',
-    ]}
-  />
 
   <!-- FAQs Widget ******************* -->
 
@@ -324,7 +388,7 @@ const meta = {
 
   <Stats
     items={[
-      { name: 'Downloads', value: '132K' },
+      { name: 'Salaire', value: '65K' },
       { name: 'Stars', value: '24.8K' },
       { name: 'Forks', value: '10.3K' },
       { name: 'Users', value: '48.4K' },

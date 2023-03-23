@@ -16,7 +16,7 @@
   }
 
   .bg-dark {
-    @apply bg-slate-900;
+    @apply bg-black;
   }
 
   
@@ -29,12 +29,12 @@
   }
 
   .btn-primary {
-    @apply font-semibold bg-primary text-white border-primary hover:bg-blue-900 hover:border-blue-900 hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-blue-900 dark:hover:bg-blue-900;
+    @apply font-semibold bg-primary text-white border-primary hover:bg-black hover:border-blue-900 hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-blue-900 dark:hover:bg-blue-900;
   }
 }
 
 #header.scroll {
-  @apply shadow-md md:shadow-lg bg-white md:bg-white/90 md:backdrop-blur-sm dark:bg-slate-900 dark:md:bg-slate-900/90;
+  @apply shadow-md md:shadow-lg bg-white md:bg-white/90 md:backdrop-blur-sm dark:bg-black dark:md:bg-black;
 }
 
 .dropdown:hover .dropdown-menu {
