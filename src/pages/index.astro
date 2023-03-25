@@ -13,6 +13,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Stats3 from '~/components/widgets/Stats3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import CallToAction2 from '~/components/widgets/CallToAction2.astro';
 
 const meta = {
   title: SITE.title,
@@ -27,7 +28,7 @@ const meta = {
   <Hero
     callToAction={{ text: 'Engagez-moi', href: 'mailto:elerouzes@gmail.com', icon: 'tabler:download' }}
     callToAction2={{ text: 'En savoir plus', href: '#features' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    image={{ src: import('~/assets/images/mev2.png'), alt: 'Edouard Le Rouzes' }}
   >
     <Fragment slot="title">
       Edouard Le Rouzes <span class="hidden lg:inline"> <br class="2xl:hidden"/> </span>
@@ -38,7 +39,7 @@ const meta = {
       <span class="hidden sm:inline">
         <span class="font-semibold">Edouard est</span></span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Prêt à relever de nouveaux défis</span> passionné par la création et la mise en œuvre de campagnes de marketing réussies. Compétent en communication et en collaboration, avec une capacité éprouvée à atteindre ou dépasser les objectifs. 
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Prêt à relever de nouveaux défis</span> un jeune créatif et ambitieux qui cherche à se démarquer. Motivé d'apprendre et de performer, ses compétences sont continuellement améliorés afin de devenir employé versatile (tel un couteau suisse...?). 
     </Fragment>
   </Hero>
 
@@ -98,6 +99,9 @@ const meta = {
 
 
   <!-- Steps Widget ****************** -->
+  <body>"
+    <h1 id="études"></h1>
+  </body>
 
   <Steps
     title="Mon parcours scholaire"
@@ -112,24 +116,42 @@ const meta = {
         title: 'DEC: <span class="font-medium">en entrepreneuriat</em>',
         description:
           "Attiré par le monde des affaires, j’ai souhaité parfaire mes connaissances en réalisant une technique en entrepreneuriat au Collège Champlain à Saint-Lambert, Qc. <div style='font-style: italic; font-size: smaller; font-weight: 300;'><em>Cours pertinents: Notions de gestion, Finances pour la prise de décision, Analyse de données commerciales, Recherche et renseignement, Psychologie du consommateur. Les bases des ressources humaines</em></div>",
-        icon: 'tabler:letter-case',
+        icon: 'tabler:file',
       },
       {
         title: 'BAC : <span class="font-medium">en administration des affaires (avec Majeure en Marketing)</span>',
         description:
           "Une fois mon DEC complété, je me suis fait offrir une bourse d’excellence par une université située en Australie, ayant un désir constant de découvrir de nouvelles choses, je me suis lancé dans cette aventure. <div style='font-style: italic; font-size: smaller; font-weight: 300;'>Cours pertinents: Administration des affaires, Gestions des ressources humaines, Finances, Marketing, Comportements du consommateur, Ventes et négociations, Gestion internationale des ressources humaines </div>",
-        icon: 'tabler:paint',
+        icon: 'tabler:school',
       },
       {
         title: 'Marché du travail !',
         icon: 'tabler:check',
       },
     ]}
+    
     image={{
-      src: import('~/assets/images/creativity.jpg'),
+      src: import('~/assets/images/griffithv1.png'),
       alt: 'Steps image',
     }}
   />
+
+  <!-- <section id="test">
+    <div class="space-y-8 sm:px-8">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 -mb-12">
+        <div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
+          <div class="mx-auto rounded-md w-full">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.270/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/MKEeB0HGer6LNxTd/scene.splinecode"></spline-viewer>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section> -->
+
+  <body>
+    <h1 id="pro"></h1>
+  </body>
 
   
   <Content
@@ -154,7 +176,7 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/caos.jpg'),
+      src: import('~/assets/images/outre.png'),
       alt: 'Colorful Image',
     }}
   >
@@ -164,12 +186,11 @@ const meta = {
     </Fragment>
   </Content>
 
-  <Stats
+  <Stats3
   items={[
     { name: 'Portes', value: '717' },
     { name: 'Syndicats', value: '22' },
     { name: 'Pieds Carrés', value: '10.3K' },
-    { name: 'Users', value: '48.4K' },
   ]}
 />
 
@@ -194,8 +215,8 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/caos.jpg'),
-      alt: 'Colorful Image',
+      src: import('~/assets/images/ebox2.png'),
+      alt: "employé d'ebox",
     }}
   >
     <Fragment slot="content">
@@ -233,8 +254,8 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/caos.jpg'),
-      alt: 'Colorful Image',
+      src: import('~/assets/images/tourssq.jpg'),
+      alt: 'employé ssq assurance',
     }}
   >
     <Fragment slot="content">
@@ -264,7 +285,7 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/caos.jpg'),
+      src: import('~/assets/images/havas.png'),
       alt: 'Colorful Image',
     }}
   >
@@ -276,6 +297,9 @@ const meta = {
 
 
   <!-- Features2 Widget ************** -->
+  <body>
+    <h1 id="certifications"></h1>
+  </body>
 
   <Features2
     title="Mes Certifications"
@@ -285,55 +309,55 @@ const meta = {
       {
         title: 'Google Project Management: Professional Certificate',
         description:
-          'Modules pertinents: Planification de projets, Débutez un projet, Exécution de projets, Gestion de projets Agile <div style="font-style: italic; font-weight: bold;" >Google Courses - Coursera</div>',
+          "Modules pertinents: Planification de projets, Débutez un projet, Exécution de projets, Gestion de projets Agile <div style='font-style: italic; font-weight: bold;'>Google Courses - Coursera</div>",
         icon: 'flat-color-icons:template',
       },
       {
         title: 'HTML, CSS, and Javascript for Web Developers',
         description:
-          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.<div style="font-style: italic; font-weight: bold;" >Johns Hopkins University</div>',
+          "Cours sur l’apprentissage du codage ainsi que sur la création de sites web fluide et qui s’adapte à l’écran de l’utilisation<div style='font-style: italic; font-weight: bold;'>Johns Hopkins University</div>",
         icon: 'flat-color-icons:gallery',
       },
       {
         title: 'Certification sur la suite microsoft office',
         description:
-          'Display your product in action and how the Features actually create a solution for your target customer.<div style="font-style: italic; font-weight: bold;" >Champlain College</div>',
+          "Certificat apprenant les bases ainsi que les fonctions les plus avancées des outils Microsoft (Words, excel, powerpoint, etc).<div style='font-style: italic; font-weight: bold;'>Champlain College</div>",
         icon: 'flat-color-icons:todo-list',
       },
       {
         title: 'Certification de base sur les réseaux sociaux',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. <div style="font-style: italic; font-weight: bold;" >Hubspot</div>',
+          "Apprentissage des bases du marketing sur les réseaux sociaux afin de pouvoir développer du contenu approprié.<div style='font-style: italic; font-weight: bold;' >Hubspot</div>",
         icon: 'flat-color-icons:document',
       },
       {
         title: 'Certification sur la plateforme Google Analytics',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. <div style="font-style: italic; font-weight: bold;" >Google</div>',
+          "Cours sur la plateforme Google analytics, ses fonctions, ses réglages ainsi que toutes les possibilités offertes.<div style='font-style: italic; font-weight: bold;' >Google</div>",
         icon: 'flat-color-icons:advertising',
       },
       {
         title: 'Certification Google Ads (Search)',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<div style="font-style: italic; font-weight: bold;" >Google</div>',
+          "Certifications sur la plateforme Google Ads, plus spécifiquement sur la partie liée à la recherche web.<div style='font-style: italic; font-weight: bold;' >Google</div>",
         icon: 'flat-color-icons:currency-exchange',
       },
       {
         title: 'Certification Google Ads (Display)',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<div style="font-style: italic; font-weight: bold;" >Google</div>',
+          "Certifications sur la plateforme Google Ads, plus spécifiquement sur la partie liée au Display Ads.<div style='font-style: italic; font-weight: bold;'' >Google</div>",
         icon: 'flat-color-icons:voice-presentation',
       },
       {
         title: 'Certification Google Ads (Measurement)',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<div style="font-style: italic; font-weight: bold;" >Google</div>',
+          "Certifications sur la plateforme Google Ads, plus spécifiquement sur la partie liée aux résultats des campagnes.<div style='font-style: italic; font-weight: bold;'' >Google</div>",
         icon: 'flat-color-icons:business-contact',
       },
       {
         title: 'Certifications Hubspot sur le marketing',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<div style="font-style: italic; font-weight: bold;" >Hubspot</div>',
+          "Certification de base sur le marketing, ses grandes lignes ainsi que ses fonctions et utilisations.<div style='font-style: italic; font-weight: bold;'' >Hubspot</div>",
         icon: 'icon-park:page-template',
       },
     ]}
@@ -343,48 +367,48 @@ const meta = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar."
+    title="Foir Aux Questions"
+    subtitle="Il est possible que ce ne soit pas des questions que je me fais régulièrement poser mais plutot une dernière façon de me vendre en tant qu'employé ... à confirmer."
     highlight="FAQs"
     items={[
       [
         {
-          question: 'What do I need to start?',
+          question: "Est-ce que j'ai de l'expérience en Marketing ?",
           answer:
-            'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+            "La réponse est oui ! J'ai non seulement un BAC et une majeure en la matière mais j'ai également eu l'opportunité de travailler dans une agence internationale (Havas) et créer des campagnes de marketing digitale complète grace à cela. J'ai également de l'expérience en gestion de communauté sur les réseaux sociaux ainsi qu'en création de contenue pour effectuer du marketing de contenu.",
         },
         {
-          question: 'How to install the Astro + Tailwind CSS template?',
+          question: "Quel aspect de la création de contenu est ce que j'ai effectué ?",
           answer:
-            "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.",
+            "Je n'ai pas de formation concrète en design mais j'ai appris de manière autodidacte en créant des publications et des vidéos comment utiliser plusieurs outils tel que photoshop, final cut pro X, canvas et autres.",
         },
         {
-          question: "What's something that you don't understand?",
+          question: "Quel sont tes connaissances en marketing digitale ?",
           answer:
-            "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+            "J'ai eu la possibilité par le passé de réaliser des campagnes de marketing digitale à l'aide de plateforme tel que Google ads, Facebook (Meta) ads ainsi que Microsoft Advertising. Je suis donc familier avec les termes spécifiques, les recherches de mots clés et l'évaluation des campagnes. Étant passionné par les chiffres, je nourris également une étrange fascination aux analytiques et à la réalisations de tableaux avec Goodle Data Studio.",
         },
       ],
       [
         {
-          question: "What's an example of when you changed your mind?",
+          question: "Quel expérience en codage possèdes-tu ?",
           answer:
-            "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+            "J'aime me démarquer en poussant continuellement mon apprentissage afin de pouvoir opérer dans plusieurs sphères professionnelles simultanément. Mon apprentissage est fait pour la plupart du temps de manière autodidacte, à trois heures du matin généralement. Je suis présentement en train de suivre un cours sur la construction d'application web avec PHP de l'université du Michigan.",
         },
         {
-          question: 'What is something that you would like to try again?',
+          question: "De quelle façon te démarques-tu ?",
           answer:
-            "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+            "Bien que ce soit des connaissances nouvellement acquises, je suis présentement en mesure d'effectuer du codage en language HTML, CSS ainsi que Javascript. Ce site internet à été réalisé à l'aide de la plateforme Astro et est une modification de leur template fait par mes soins.",
         },
         {
-          question: 'If you could only ask one question to each person you meet, what would that question be?',
+          question: 'Quelles sont tes réalisations ?',
           answer:
-            "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+            "Sortant de l'école, je dois dire que j'ai eu peu d'opportunité de travailler sur des projets marketing professionnelles. Vous pouvez tout de même trouver les projets que j'ai pu réaliser dans l'onglet Réalisation de ce site internet.",
         },
       ],
     ]}
   />
 
-  <!-- Stats Widget ****************** -->
+  <!-- Stats Widget ******************
 
   <Stats
     items={[
@@ -393,24 +417,26 @@ const meta = {
       { name: 'Forks', value: '10.3K' },
       { name: 'Users', value: '48.4K' },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <CallToAction2
     callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
+      text: 'Mon CV',
+      href: '/assets/images/mev2.png',
       icon: 'tabler:download',
     }}
   >
     <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Vous souhaitez en parler avec les autres ? <br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Vous pouvez télécharger mon C.V. en utilisant le boutton ci-dessous.<br class="hidden md:inline" />Ce sera plus simple.
+      <!-- <div><a href="/assets/cv.pdf" download>Mon CV</a></div> -->
     </Fragment>
-  </CallToAction>
+  </CallToAction2>
 </Layout>
+
+
