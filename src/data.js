@@ -24,16 +24,16 @@ export const headerData = {
       links: [
         {
           text: 'Laucandrique',
-          href: '#',
+          href: '../laucandrique',
         },
-        // {
-        //   text: 'Pricing',
-        //   href: '#',
-        // },
-        // {
-        //   text: 'About us',
-        //   href: '#',
-        // },
+        {
+          text: 'Personnelles',
+          href: '../perso',
+        },
+        {
+          text: 'Scolaires',
+          href: '../ecole',
+        },
         // {
         //   text: 'Contact',
         //   href: '#',
@@ -121,6 +121,6 @@ export const footerData = {
     // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="mailto:elrouzes@gmail.com"> Edouard Le Rouzes</a> · All rights reserved.
+    Réalisé par <a class="text-blue-600 hover:underline dark:text-gray-200" href="mailto:elrouzes@gmail.com"> Edouard Le Rouzes</a> · Tous droits réservés.
   `,
 };

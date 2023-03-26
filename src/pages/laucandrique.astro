@@ -1,0 +1,115 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction2 from '~/components/widgets/CallToAction2.astro';
+
+import { headerData } from '~/data';
+
+const meta = {
+  title: 'Projet Laucandrique - ELR',
+};
+---
+
+<Layout {meta}>
+  <!-- <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          type: "ghost",
+          text: 'Login',
+          href: '#',
+        },
+        {
+          type: "primary",
+          text: 'Sign Up',
+          href: '#',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment> -->
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    callToAction={{ text: 'Visitez le site', href: 'https://elragencyp1.netlify.app/', icon: 'tabler:check' }}
+    callToAction2={{ text: 'En savoir plus ', href: '#laucandrique' }}
+    image={{ src: import('~/assets/images/laucphone.png'), alt: 'site internet de laucandrique sur mobile' }}
+  >
+    <Fragment slot="title">
+      Création de site web <br />
+      <span class="text-accent dark:text-white highlight"> ELR</span> + Laucandrique
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">En tant qu’étudiant avide de connaissances,</span> je me suis permis de créer un nouveau site web pour la compagnie avec laquelle je travaille présentement afin de mettre à épreuve mes nouvelles compétences en codage.</span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Edouard Le Rouzes est prêt à relever vos défis</span><br>Mon but est d'apprendre et de devenir un atout incontournable pour le succès de votre entreprise.
+    </Fragment>
+  </Hero2>
+
+  <body>
+    <h1 id="laucandrique"></h1>
+  </body>
+
+    <!-- Steps2 Widget ****************** -->
+
+    <Steps2
+    title="Ayant toujours été intéressé par l'immobilier, je me suis permis d'appliquer à un poste de gestionnaire chez laucandrique."
+    subtitle="Après avoir étudié la présence en ligne de Laucandrique, j'ai tout de suite réalisé que je pourrais apporter mon aide à leur département marketing. Cela a également été un point souligné lors de mon embauche et m'a énormément motivé à vouloir poursuivre avec cette compagnie. <br> <br>Malgré cela, je me suis vite rendu compte que l'aspect marketing qui avait été discuté n'était pas réellement quelque chose qui était souhaité et que ma présence était uniquement requise en tant que gestionnaire immobilier malgré mon investissement personnel dans le développement de la stratégie marketing."
+    callToAction={{
+        text: 'Me contacter',
+        href: 'mailto:elerouzes@gmail.com',
+        icon: 'tabler:download',
+      }}
+
+    items={[
+      {
+        title: "Analyse et étude des besoins",
+        description:
+          "Afin de bien saisir les besoins de l'entreprise et développer un plan d'affaires en corrélation avec leurs attentes, j'ai étudié les différents aspects de la compagnie et compris le fonctionnement général de leur service.",
+      },
+      {
+        title: "Développement d'un plan complet",
+        description:
+          "Après avoir compris le fonctionnement ainsi que les grandes lignes de l'entreprise, j'ai décidé de mettre sur pied un plan marketing qui se baserait sur le marketing de contenu afin de favoriser la reconnaissance de marque de l'entreprise.",
+      },
+      {
+        title: "Développement d'un site web",
+        description:
+          "Un aspect que j'ai souligné dans ce rapport était les évaluations très bases des clients sur google review ainsi que le site internet très peu fonctionnel et intéressant pour les clients potentiels. J'ai donc appris à coder et fournis une nouvelle maquette de ce à quoi cela pourrait ressembler.",
+      },
+    ]}
+  />
+
+
+        
+
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction2
+    callToAction={{
+      text: 'Mon CV',
+      href: 'src/assets/ELR-cv.pdf',
+      icon: 'tabler:download',
+    }}
+  >
+    <Fragment slot="title">
+      Vous souhaitez en parler avec les autres ? <br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Vous pouvez télécharger mon C.V. en utilisant le bouton ci-dessous.<br class="hidden md:inline" />Ce sera plus simple.
+      <!-- <div><a href="/assets/cv.pdf" download>Mon CV</a></div> -->
+    </Fragment>
+  </CallToAction2>
+</Layout>
+
+

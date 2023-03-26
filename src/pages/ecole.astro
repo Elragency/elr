@@ -1,0 +1,136 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction2 from '~/components/widgets/CallToAction2.astro';
+
+import { headerData } from '~/data';
+
+const meta = {
+  title: 'Projets Persos - ELR',
+};
+---
+
+<Layout {meta}>
+  <!-- <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          type: "ghost",
+          text: 'Login',
+          href: '#',
+        },
+        {
+          type: "primary",
+          text: 'Sign Up',
+          href: '#',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment> -->
+
+  <!-- Hero2 Widget ******************* -->
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="preload" as="style" href="src/assets/styles/style.css">
+    <link rel="stylesheet" href="src/assets/styles/style.css">
+  </head>
+
+  <Hero2
+    callToAction2={{ text: 'En savoir plus ', href: '#portfolio' }}
+    image={{ src: import('~/assets/images/schoolp.png'), alt: 'projets scolaires Edouard Le Rouzes' }}
+  >
+    <Fragment slot="title">
+      <br />
+      <span class="text-accent dark:text-white highlight"> Mes réalisations Scolaires</span> + Griffith
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">Ayant eu peu de projets professionnels,</span> je vous partage mes réalisations scolaires si jamais cela pouvait vous être utile.</span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Les travaux ont été réalisés à l'université de Griffith</span> La présentation ainsi que les éléments présentés ont été faits à titre pédagogique et n'ont pas été mandatés par les compagnies présentées.
+    </Fragment>
+  </Hero2>
+
+  <body>
+    <h1 id="portfolio"></h1>
+  </body>
+
+  <body>
+      <section class="ui-section-feature">
+        <div class="ui-layout-container">
+          <h1 class="centered-heading">Mon Portfolio Scolaire</h1>
+          <br>
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+            <!-- IMAGE MAIN 1 FROM ELRAGENCY GMAIL ON YUMPU-->
+            <iframe width="520px" height="531px" src="https://www.yumpu.com/en/embed/view/3ADKGWd6mvB0VlbL" frameborder="0" allowfullscreen="true"  allowtransparency="true" loading="lazy" alt="#" class="ui-image-half-left"></iframe>
+            <!-- FEATURE -->
+            <div>
+              <h2>Southern Cross Tours</h2>
+              <p class="ui-text-intro">Le projet avait pour but de développer une campagne de marketing numérique pour une compagnie nommée Southern Cross Tours, la limitation de mots très basse a impacté significativement le contenu du rapport.</p>
+              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
+                <li class="ui-component-list--item ui-component-list--item-check">Persona & Narratif</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Digital hourglass</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Campagne Marketing</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Budget et plan d'implémentation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+            <!-- FEATURE FROM IMTHEONLYGOON GMAIL ON YUMPU-->
+            <div>
+              <h2>Wellington Point Farm</h2>
+              <p class="ui-text-intro">Ce projet avait également pour but de créer une campagne marketing mais n'était pas limité à l'aspect digital et nous permettait donc d'utiliser des moyens plus traditionnels.</p>
+              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
+                <li class="ui-component-list--item ui-component-list--item-check">Mix Marketing (4Ps)</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Développement stratégique</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Analyse du marché cible.</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Évaluation de la campagne</li>
+              </ul>
+            </div>
+            <!-- IMAGE 2 -->
+            <iframe width="520px" height="531px" src="https://www.yumpu.com/en/embed/view/LfcrgkqJ8elNthQj" frameborder="0" allowfullscreen="true"  allowtransparency="true" loading="lazy" alt="#" class="ui-image-half-right"></iframe>
+          </div>
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+            <!-- IMAGE 3-->
+            <iframe width="520px" height="531px" src="https://www.yumpu.com/en/embed/view/ZwTuHAUWbMDJrhKG" frameborder="0" allowfullscreen="true"  allowtransparency="true" loading="lazy" alt="#" class="ui-image-half-left"></iframe>
+            <!-- FEATURE -->
+            <div>
+              <h2>Mantra</h2>
+              <p class="ui-text-intro">Le but de ce projet n'était pas lié au marketing uniquement, mais plutôt à l'analyse d'une compagnie dans son entièreté ainsi qu'une mise en place de piste de solution pour augmenter ses revenues.</p>
+              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
+                <li class="ui-component-list--item ui-component-list--item-check">Analyses des 4Cs</li>
+                <li class="ui-component-list--item ui-component-list--item-check">SWOT</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Marketing Mix (7Ps)</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Analyse de la compagnie</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  </body>
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction2
+    callToAction={{
+      text: 'Mon CV',
+      href: '/assets/images/mev2.png',
+      icon: 'tabler:download',
+    }}
+  >
+    <Fragment slot="title">
+      Vous souhaitez en parler avec les autres ? <br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Vous pouvez télécharger mon C.V. en utilisant le bouton ci-dessous.<br class="hidden md:inline" />Ce sera plus simple.
+      <!-- <div><a href="/assets/cv.pdf" download>Mon CV</a></div> -->
+    </Fragment>
+  </CallToAction2>
+</Layout>

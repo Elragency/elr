@@ -1,0 +1,171 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction2 from '~/components/widgets/CallToAction2.astro';
+
+import { headerData } from '~/data';
+
+const meta = {
+  title: 'Projets Persos - ELR',
+};
+---
+
+<Layout {meta}>
+  <!-- <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          type: "ghost",
+          text: 'Login',
+          href: '#',
+        },
+        {
+          type: "primary",
+          text: 'Sign Up',
+          href: '#',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment> -->
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    
+    callToAction2={{ text: 'En savoir plus ', href: '#realisations' }}
+    image={{ src: import('~/assets/images/phoneperso.png'), alt: "les réalisations personnelles d'Edouard Le Rouzes" }}
+  >
+    <Fragment slot="title">
+        Mes réalisations personnelles <br />
+      <span class="text-accent dark:text-white highlight"> ELR</span> + ELR
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">Avide de connaissance, je me suis également résolu à tenter diverses approches par moi même.</span> </span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Edouard Le Rouzes est prêt à relever vos défis</span> Parmis mes projets personnelles, vous trouverez entre autre la mise en place d'une liste d'emails ayant atteint près de 1 500 membres et une gestion de communauté de plus de 3 000 membres sur instagram.
+    </Fragment>
+  </Hero2>
+
+  <!-- Content Widget **************** -->
+
+  <body>
+    <h1 id="realisations"></h1>
+  </body>
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Création de la plateforme web',
+        description:
+          "J'ai débuté en réalisant une plateforme web qui servirait non seulement d'outil pour collecter les courriels, mais également de plateforme pour permettre le téléchargement des ressources du producteur.",
+      },
+      {
+        title: "Mise en place de la stratégie",
+        description:
+          "Afin de permettre un échange à valeur égale pour les visiteurs du site web, ma stratégie était d'offrir des outils utiles gratuitement en échange des courriels de nos utilisateurs. Cela m'a permis de faire grandir de manière consistante notre liste de courriels.",
+      },
+      {
+        title: 'Marketing par courriel',
+        description:
+          "À chaque vidéo ou nouvelle ressource disponible, je publiais un courriel aux utilisateurs, ce qui a permis à la chaine YouTube d'atteindre les 900 abonnés.",
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/statsv3.png'),
+      alt: 'mes statistiques de réalisations personnelles',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Liste de courriels</h3>
+      Afin d'aider la communication d'un producteur de musique, j'ai mis en place un site complet à l'aide de la plateforme wix et récolté 1&nbsp;460 courriels.
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: "Augmentation du nombre d'abonnés",
+        description:
+          "Afin d'augmenter le nombre d'abonnés, j'ai mis en place un calendrier de publication ainsi qu'une stratégie de partage favorisant la découverte de cette page.",
+      },
+      {
+        title: "Augmentation de la portée des publications",
+        description:
+          "La page instagram se trouve dans une niche particulière qui n'est pas favorisée par la plateforme instagram, malgré cela j'ai été en mesure de garantir une augmentation conséquente de la porté des publications.",
+      },
+      {
+        title: 'Fréquence constante',
+        description:
+          "Une grande partie de la tâche a également été de se discipliner afin de se positionner comme une page constante dans le développement de créatrices.",
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/igv4.png'),
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Gestion de communauté Instagram</h3>
+      En l'espace d'une année, j'ai permis à une page Instagram d'atteindre les 3 000 abonnés sur Instagram tout en augmentant de presque 100% la portée des publications. 
+    </Fragment>
+  </Content>
+
+  <!-- Steps2 Widget ******************
+
+  <Steps2
+    title="Sed ac magna sit amet risus tristique interdum, at vel velit in hac habitasse platea dictumst."
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus."
+    callToAction={{
+      text: 'Get template',
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:download',
+    }}
+    items={[
+      {
+        title: 'Responsive Elements',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+      },
+      {
+        title: 'Flexible Team',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+      },
+      {
+        title: 'Ecologic Software',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+      },
+    ]}
+  /> -->
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction2
+    callToAction={{
+      text: 'Mon CV',
+      href: '/assets/images/mev2.png',
+      icon: 'tabler:download',
+    }}
+  >
+    <Fragment slot="title">
+      Vous souhaitez en parler avec les autres ? <br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Vous pouvez télécharger mon C.V. en utilisant le bouton ci-dessous.<br class="hidden md:inline" />Ce sera plus simple.
+      <!-- <div><a href="/assets/cv.pdf" download>Mon CV</a></div> -->
+    </Fragment>
+  </CallToAction2>
+</Layout>
