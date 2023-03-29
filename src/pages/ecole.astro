@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -54,7 +55,16 @@ const meta = {
       >
       <span class="block mb-1 sm:hidden font-bold text-blue-600">Les travaux ont été réalisés à l'université de Griffith</span> La présentation ainsi que les éléments présentés ont été faits à titre pédagogique et n'ont pas été mandatés par les compagnies présentées.
     </Fragment>
+    
   </Hero2>
+
+
+  <section>
+    <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 centered-heading">Lettre de reference</h1>
+    <section class="image-section">
+      <img src="https://i.imgur.com/EfZiGN2.png" alt="lettre de reference pour Edouard Le Rouzes" class="image">
+    </section>
+  </section>
 
   <body>
     <h1 id="portfolio"></h1>
@@ -964,5 +974,20 @@ SECTION
   padding-top: 3rem;
 }
 
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin: 40px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
 }
 </style>
